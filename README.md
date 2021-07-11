@@ -14,14 +14,14 @@ Anteriomente asegurarse de tener copiados todos los archivos y directorios, adem
 
 ## Servicios
 ### /mutant
-Se realiza una solicitud post ingresando como parámetro un adn para verificar y se obtiene una respuesta diferente según el resultado.
+Se realiza una solicitud POST ingresando como parámetro un adn para verificar y se obtiene una respuesta diferente según el resultado.
 ```
 POST → /mutant/
 {
   "dna":["AAAAGA", "CAGTGC", "TTCTAT", "AGAAGG", "CCCCTA", "TCACTG"]
 }
 ```
-- Si verifica que el adn pertenece a un mutante devuelve HTTP 200-OK y la siguiente respuesta:
+- Si verifica que el adn pertenece a un mutante devuelve 200-OK y la siguiente respuesta:
 
   {
     "mutant":true
@@ -47,9 +47,17 @@ Se realiza una solicitud GET sin ingresar parámetros y se obtiene como respuest
 ```
 GET → /stats 
 ```
-Respuesta: {
+- Si el servicio funciona correctamente devuelve 200-OK y una respuesta como la siguiente:
+
+  {
   "count_human_dna":10, "count_mutant_dna":2, "ratio":0.2
-}
+  }
+
+- Si existe un error interno con el servicio devuelve 500-Internal server error y la siguiente respuesta:
+
+  {
+  "error":"Error interno en el servidor"
+  }
 
 ## Funcionamiento
 ![postman](https://github.com/jssknn/mutantes/blob/main/postman.gif)
