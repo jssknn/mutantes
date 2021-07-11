@@ -51,6 +51,9 @@ Respuesta: {
   "count_human_dna":10, "count_mutant_dna":2, "ratio":0.2
 }
 
+## Funcionamiento
+![postman](https://github.com/jssknn/mutantes/blob/main/postman.gif)
+
 ## Coverage
 El test de código se realizó mediante unittest y el reporte de cobertura con el módulo coverage de Python. 
 
