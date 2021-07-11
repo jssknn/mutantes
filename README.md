@@ -54,6 +54,12 @@ Respuesta: {
 ## Funcionamiento
 ![postman](https://github.com/jssknn/mutantes/blob/main/postman.gif)
 
+## Algoritmo
+Realiza la búsqueda de coincidencias de manera secuencial. Primero horizontalmente, luego verticalmente, después de forma oblicua tomando las diagonales que van desde la esquina superior izquierda hacia la inferior derecha y por último sobre las diagonales que van desde la esquina superior derecha hacia la inferior izquierda.
+
+Todo esto lo hace buscando la secuencia de letras consecutivas en una lista de cadenas, en cada bloque está la posibilidad de salir si el acumulador de coincidencias es mayor a uno.
+ 
+
 ## Coverage
 El test de código se realizó mediante unittest y el reporte de cobertura con el módulo coverage de Python. 
 
