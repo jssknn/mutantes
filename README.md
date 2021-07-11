@@ -1,13 +1,13 @@
 # mutantes
 Api creada con Python y base de datos Redis. Responde al enunciado adjunto nombrado como Mutantes.pdf. 
 
-Implementado en EC2 con docker, donde también se agregó gunicorn y nginx.
+Implementado en EC2 con docker, donde también se agregó gunicorn y nginx para resolver las peticiones.
 
 Para realizar la implementación en docker se debe ejecutar el siguiente comando:
 ```
 docker-compose up --build -d
 ```
-Anteriomemte asegurarse de tener copiados todos los archivos y directorios, además de estar situados en donde se encuentra el archivo docker-compose.yml.
+Anteriomente asegurarse de tener copiados todos los archivos y directorios, además de estar situados en donde se encuentra el archivo docker-compose.yml.
 
 ## Diagrama
 ![diagrama](https://github.com/jssknn/mutantes/blob/main/diagrama.png)
@@ -52,8 +52,8 @@ Respuesta: {
 }
 
 ## Coverage
-![diagrama](https://github.com/jssknn/mutantes/blob/main/coverage.PNG)
-
-El test de código se realizó mediante unittest y el reporte de coverage con el módulo coverage de Python. 
+El test de código se realizó mediante unittest y el reporte de cobertura con el módulo coverage de Python. 
 
 Dentro de la carpeta /test se encuentran los archivos generados.
+
+![diagrama](https://github.com/jssknn/mutantes/blob/main/coverage.PNG)
