@@ -16,7 +16,7 @@ Anteriomente asegurarse de tener copiados todos los archivos y directorios, adem
 ### /mutant
 Se realiza una solicitud POST ingresando como parámetro un adn para verificar y se obtiene una respuesta diferente según el resultado.
 ```
-POST → /mutant/
+POST → /mutant
 {
   "dna":["AAAAGA", "CAGTGC", "TTCTAT", "AGAAGG", "CCCCTA", "TCACTG"]
 }
