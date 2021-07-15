@@ -9,6 +9,28 @@ docker-compose up --build -d
 ```
 Anteriomente asegurarse de tener copiados todos los archivos y directorios, además de estar situados en donde se encuentra el archivo docker-compose.yml.
 
+## Estructura de archivos
+```
+.
+├── app 
+│   ├── Dockerfile
+│   ├── api.py
+│   ├── dna_mutant.py
+│   ├── dnadb.py
+│   ├── requirements.txt
+│   └── wsgi.py
+├── nginx
+│   ├── Dockerfile        
+│   ├── nginx.conf  
+│   └── project.conf
+├── test
+│   ├── htmlcov
+│   │   └── coverage_files      
+│   └── api_mutant_test.py 
+└── docker-compose.yml
+
+```
+
 ## Diagrama
 ![diagrama](https://github.com/jssknn/mutantes/blob/main/diagrama.png)
 
